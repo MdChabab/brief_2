@@ -3,81 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <!-- navbar -->
+    <!-- header -->
 
     <header>
-        <div class="logoUp">
-            <img src="./assets/droplet.png" alt="droplet">
-            Plomb’Express
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="./assets/droplet.png" alt="droplet">
+                Plomb’<span>Express</span> 
+            </div>
+            <nav>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Services</li>
+                    <li>À propos</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="uil uil-bars menu-icon" aria-hidden="true"></i>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>Accueil</li>
-                <li>Services</li>
-                <li>À propos</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <button>Demander un devis</button>
+
+        <div class="button-div">
+            <button>Demander un devis</button>
+        </div>
     </header>
     
-
     <!-- hero -->
 
     <section class="hero">
-        <div class="text">
+        <div class="services">
             <div>
-                <i class="uil uil-map-marker"></i>
-                <p>Votre artisan à Lyon et alentours</p>
+                <div class="location"><i class="uil uil-map-marker"></i>Votre artisan à Lyon et alentours</div>
                 <h1>Un plombier de confiance près de chez vous</h1>
                 <p>Chez Plomb’Express, nous prenons soin de votre confort. Dépannage, installation ou fuite : nos artisans vous accompagnent avec réactivité, transparence et un travail soigné.</p>
-                <button>Demander un devis</button>
-                <button>Nos services</button>
+                <div class="buttons-div">
+                    <button>Demander un devis</button>
+                    <button>Nos services</button>
+                </div>
             </div>
-            <div class="image">
+
+            <div class="img-div">
                 <img src="./assets/hero_image.jpg" alt="picture of a plumber">
             </div>
         </div>
+
         <hr>
-        <div class="">
-            <div><i class="uil uil-clock-nine"></i>Intervention rapide 7j/7</div>
-            <div><i class="uil uil-file-check"></i></i></i>Travail garanti</div>
-            <div><i class="uil uil-check-square"></i>Professionnels qualifiés</div>
+
+        <div class="highlights-centered">
+            <div class="highlights">
+                <p><i class="uil uil-clock-nine"></i>Intervention rapide 7j/7</p>
+                <p><i class="uil uil-file-check"></i>Travail garanti</p>
+                <p><i class="uil uil-check-square"></i>Professionnels qualifiés</p>
+            </div>
         </div>
     </section>
 
     <!-- solutions -->
 
     <section class="solutions">
-        <p>NOS SAVOIR-FAIRE</p>
-        <h2>Des solutions pour tous vos besoins</h2>
-        <p>De l’urgence au projet, le bon geste pour chaque situation.</p>
         <div>
-            <div>
+            <p>NOS SAVOIR-FAIRE</p>
+            <h2>Des solutions pour tous vos besoins</h2>
+            <p>De l’urgence au projet, le bon geste pour chaque situation.</p>
+        </div>
+        
+        <div class="cards">
+            <div class="first card">
                 <img src="./assets/solutions1.jpg" alt="plumber working">
                 <i class="uil uil-wrench"></i>
                 <h3>Dépannage plomberie</h3>
                 <p>Canalisation bouchée, chauffe-eau en panne ou robinet défectueux : nous intervenons vite pour rétablir votre confort.</p>
             </div>
-            <div>
+            <div class="second card">
                 <img src="./assets/solutions2.jpg" alt="plumber working">
                 <i class="uil uil-bath"></i>
                 <h3>Installation sanitaire</h3>
                 <p>Lavabo, douche, WC ou robinetterie : une installation sur mesure, des raccordements fiables et des finitions soignées.</p>
             </div>
-            <div>
+            <div class="third card">
                 <img src="./assets/solutions3.jpg" alt="plumber working">
                 <i class="uil uil-raindrops-alt"></i>
                 <h3>Réparation de fuites</h3>
                 <p>Nous localisons la fuite et réparons vos canalisations durablement, pour protéger votre logement et éviter le gaspillage.</p>
             </div>
         </div>
+
         <button>Voir tous nos services →</button>
     </section>
 
