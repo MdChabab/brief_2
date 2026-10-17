@@ -3,92 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Plomb’Express</title>
 </head>
 <body>
 
-    <!-- Navbar -->
-     
-    <header class="flex">
-        <div class="logo">
-            <h1>PixelClub.</h1>
+    <!-- header -->
+
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="./assets/droplet.png" alt="droplet">
+                Plomb’<span>Express</span> 
+            </div>
+            <nav>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Services</li>
+                    <li>À propos</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="uil uil-bars menu-icon" aria-hidden="true"></i>
+            </nav>
         </div>
 
-        <nav>
-            <ul>
-                <li>Accueil</li>
-                <li>Ateliers</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="button-div">
+            <button>Demander un devis</button>
+        </div>
     </header>
+    
+    <!-- hero -->
 
-    <!-- Main -->
-
-    <section class="main">
-
-        <div class="upper flex">
-
-            <div class="left">
-                <div class="head">
-                    <span>CRÉER</span>
-                    <span> • TESTER</span>
-                    <span> • PARTAGER</span>
+    <section class="hero">
+        <div class="services">
+            <div>
+                <div class="location"><i class="uil uil-map-marker"></i>Votre artisan à Lyon et alentours</div>
+                <h1>Un plombier de confiance près de chez vous</h1>
+                <p>Chez Plomb’Express, nous prenons soin de votre confort. Dépannage, installation ou fuite : nos artisans vous accompagnent avec réactivité, transparence et un travail soigné.</p>
+                <div class="buttons-div">
+                    <button>Demander un devis</button>
+                    <button>Nos services</button>
                 </div>
-                <h1>Votre premier site 
-                    <br>prend vie ici.
-                </h1>
-                <p>Apprenez le web design à travers des ateliers courts et des <br>
-                    mini-projets à réaliser pas à pas
-                </p>
-                <button>Découvrir les ateliers</button>
             </div>
 
-            <div class="right">
-                <div class="pixel">&lt;pixel&gt;</div>
-                <div class="nested">Dessinez. Codez.</div>
-                <div class="pixel">&lt;/pixel&gt;</div>
-            </div>
-
-        </div>
-
-        <div class="lower">
-            <h2>Nos ateliers</h2>
-            <p>Trois étapes pour réaliser votre première page web.</p>
-
-            <div class="cards flex">
-                <div class="first card">
-                    <h2><span>01</span> 
-                        Structure
-                    </h2>
-                    <p>Organisez les blocs de votre page.</p>
-                </div>
-
-                <div class="second card">
-                    <h2><span>02</span> 
-                        Couleurs
-                    </h2>
-                    <p>Choisissez une palette et une typographie.</p>
-                </div>
-
-                <div class="third card">
-                    <h2><span>03</span> 
-                        Mobile
-                    </h2>
-                    <p>Rendez votre pageconfortable partout.</p>
-                </div>
+            <div class="img-div">
+                <img src="./assets/hero_image.jpg" alt="picture of a plumber">
             </div>
         </div>
 
-        <div class="seperator"><hr></div>
+        <hr>
+
+        <div class="highlights-centered">
+            <div class="highlights">
+                <p><i class="uil uil-clock-nine"></i>Intervention rapide 7j/7</p>
+                <p><i class="uil uil-file-check"></i>Travail garanti</p>
+                <p><i class="uil uil-check-square"></i>Professionnels qualifiés</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- solutions -->
+
+    <section class="solutions">
+        <div>
+            <p>NOS SAVOIR-FAIRE</p>
+            <h2>Des solutions pour tous vos besoins</h2>
+            <p>De l’urgence au projet, le bon geste pour chaque situation.</p>
+        </div>
+        
+        <div class="cards">
+            <div class="first card">
+                <img src="./assets/solutions1.jpg" alt="plumber working">
+                <i class="uil uil-wrench"></i>
+                <h3>Dépannage plomberie</h3>
+                <p>Canalisation bouchée, chauffe-eau en panne ou robinet défectueux : nous intervenons vite pour rétablir votre confort.</p>
+            </div>
+            <div class="second card">
+                <img src="./assets/solutions2.jpg" alt="plumber working">
+                <i class="uil uil-bath"></i>
+                <h3>Installation sanitaire</h3>
+                <p>Lavabo, douche, WC ou robinetterie : une installation sur mesure, des raccordements fiables et des finitions soignées.</p>
+            </div>
+            <div class="third card">
+                <img src="./assets/solutions3.jpg" alt="plumber working">
+                <i class="uil uil-raindrops-alt"></i>
+                <h3>Réparation de fuites</h3>
+                <p>Nous localisons la fuite et réparons vos canalisations durablement, pour protéger votre logement et éviter le gaspillage.</p>
+            </div>
+        </div>
+
+        <button>Voir tous nos services →</button>
+    </section>
+
+    <!-- choose us -->
+
+    <section class="choose_us">
+        <div class="image">
+            <img src="./assets/quality.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="statement">
+                <p>POURQUOI NOUS CHOISIR ?</p>
+                <h2>Un service fiable et de qualité</h2>
+                <p>Votre tranquillité mérite un artisan engagé. Nous faisons de la qualité et de la confiance nos priorités, à chaque intervention.</p>
+            </div>
+            <div>
+                <i class="uil uil-user-check"></i>
+                <h3>Expertise</h3>
+                <p>Des artisans qualifiés et expérimentés pour un diagnostic précis.</p>
+            </div>
+            <div>
+                <i class="uil uil-clipboard-notes"></i>
+                <h3>Devis gratuit</h3>
+                <p>Un prix clair avant les travaux, sans mauvaise surprise.</p>
+            </div>
+            <div>
+                <i class="uil uil-shield-plus"></i>
+                <h3>Garantie</h3>
+                <p>Des travaux garantis et des équipements sélectionnés pour durer.</p>
+            </div>
+            <div>
+                <i class="uil uil-headphones"></i>
+                <h3>Service client</h3>
+                <p>Une équipe à votre écoute, du premier appel au suivi de votre intervention.</p>
+            </div>
+        </div>
     </section>
 
     <!-- footer -->
 
     <footer>
-        <p class="logo2">PixelClub.</p>
-        <p class="moto">Créer ensemble, un pixel à la fois</p>
+        <div>
+            <div class="socials">
+                <div class="logoDown">
+                    <img src="./assets/droplet.png" alt="">Plomb’Express
+                </div>
+                <p>Votre partenaire plomberie pour un quotidien serein. Des artisans de proximité, un travail soigné et des engagements tenus.</p>
+                <i class="uil uil-facebook"></i>
+                <i class="uil uil-instagram-alt"></i>
+                <i class="uil uil-linkedin"></i>
+            </div>
+            <ul>
+                <li>Liens utiles</li>
+                <li>Accueil</li>
+                <li>Services</li>
+                <li>À propos</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+                <li>Nos services</li>
+                <li>Dépannage plomberie</li>
+                <li>Installation sanitaire</li>
+                <li>Réparation de fuites</li>
+            </ul>
+            <ul>
+                <li>Contactez-nous</li>
+                <li>04 00 00 00 00</li>
+                <li>bonjour@plombexpress.example</li>
+                <li>12 rue des Artisans <br>69003 Lyon, France</li>
+                <li>Coordonnées fictives — site de démonstration.</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <p>© 2026 Plomb’Express. Tous droits réservés.</p>
+            <div>
+                <p>Mentions légales</p>
+                <p>Confidentialité</p>
+            </div>
+        </div>
     </footer>
 
 </body>
